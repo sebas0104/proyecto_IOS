@@ -17,7 +17,7 @@ init(IDproducto: Int,Nomproduc: String,Descripcion: String,Cantidad: Int,Precio:
 }
 
 func toString()-> String{
-    return "Producto: \(IDproducto) - \(Nomproduc) - \(Descripcion) -\(Cantidad)- S/. \(Precio)"
+    return "Producto: \(Nomproduc) - \(Descripcion) -\(Cantidad)- S/. \(Precio)"
 }
     
 }
