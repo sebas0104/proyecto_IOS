@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="VisionStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="VisionStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,10 +31,10 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CONTRASEÑA" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l9E-tM-xde">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l9E-tM-xde">
                                         <rect key="frame" x="0.0" y="34" width="384" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nr2-jP-jbB">
                                         <rect key="frame" x="0.0" y="68" width="384" height="31"/>
@@ -45,6 +45,9 @@
                                                 <buttonConfiguration key="configuration" style="gray" title="REGISTRAR">
                                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="registrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LnZ-tg-N4q"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVJ-TP-5S5">
                                                 <rect key="frame" x="192" y="0.0" width="192" height="31"/>
@@ -74,6 +77,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EF6-U7-Wvc"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="AVJ-TP-5S5" id="yKb-oi-GCp"/>
+                        <outlet property="btnRegistrar" destination="AVJ-TP-5S5" id="k1A-1E-aRU"/>
+                        <outlet property="txtCorreo" destination="WUU-WN-Sqf" id="BCA-Ui-v4o"/>
+                        <outlet property="txtPassword" destination="l9E-tM-xde" id="mo5-Tf-S5h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
