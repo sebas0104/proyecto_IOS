@@ -206,6 +206,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="GUARDAR"/>
+                                                <connections>
+                                                    <action selector="guardar:" destination="bYC-vm-K33" eventType="touchUpInside" id="x4u-WO-uL9"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -221,6 +224,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Producto Form" id="F8T-bv-hjZ"/>
+                    <connections>
+                        <outlet property="txtCantidad" destination="N12-uh-PKL" id="dtn-HK-dAk"/>
+                        <outlet property="txtDescripcion" destination="4fi-0t-LFc" id="S6W-uf-BJn"/>
+                        <outlet property="txtPrecio" destination="bXH-Gn-LZ4" id="Uxn-ub-y5y"/>
+                        <outlet property="txtProducto" destination="9cd-D4-bcU" id="3gS-3N-A6p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8D-fE-QkU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -35,26 +35,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-}
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if let correo = txtCorreo.text, let password = txtPassword.text{
-            
-            Auth.auth().signIn(withEmail: correo, password: password){
-                (result,error) in
-                
-                if let result = result , error == nil {
-                    
-                    let destinacionVC = segue.destination as! ListaProductoController
-                    
-                    destinacionVC
-                                    
-                                }
-            }
-    
-    }
-
 }
-
+    
 }

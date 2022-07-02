@@ -53,4 +53,37 @@ class ListaProductoController: UIViewController,
             }
             
 }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            let destinationVc = segue.destination as!
+        ProductoFormViewController
+            destinationVc.productoForm.IDproducto = listaProductos.count + 1
+        }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+         
+         let editar = UITableViewRowAction(style: .normal, title: "EDITAR"){
+             (action, indexPath)in
+             print("editando:"+String(self.listaProductos[indexPath.row].IDproducto))
+             
+             // ABRIR PRODUCTOFORM
+             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProductoFormViewController") as! ProductoFormViewController
+             // mando los datos del producto de la fila
+             vc.productoForm = self.listaProductos[indexPath.row]
+             self.navigationController?.pushViewController(vc, animated: true)
+             
+         }
+         editar.backgroundColor = UIColor.blue
+         
+         let eliminar = UITableViewRowAction(style: .destructive, title: "ELIMINAR"){
+             (action, indexPath) in
+             print("eliminando:" + String(self.listaProductos[indexPath.row].IDproducto))
+             
+             let db = Firestore.firestore()
+             let productoReference = db.collection("producto_prueba").document(String(self.listaProductos[indexPath.row].IDproducto))
+             productoReference.delete()
+             self.listarProductos()
+         }
+         
+         return [editar, eliminar]
+     }
 }
