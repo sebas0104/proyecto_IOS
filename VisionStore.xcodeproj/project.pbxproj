@@ -21,7 +21,6 @@
 		0C87805F286E9E71000039B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C87805E286E9E71000039B8 /* GoogleService-Info.plist */; };
 		0C878061286EA9C8000039B8 /* ListaProductoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C878060286EA9C8000039B8 /* ListaProductoController.swift */; };
 		0C878063286EAA70000039B8 /* ProductoFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C878062286EAA70000039B8 /* ProductoFormViewController.swift */; };
-		0C878065286EAA9D000039B8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C878064286EAA9D000039B8 /* LoginViewController.swift */; };
 		0C878067286EAB2E000039B8 /* Producto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C878066286EAB2E000039B8 /* Producto.swift */; };
 		4F947592286F8D340087645F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4F947591286F8D340087645F /* FirebaseAnalytics */; };
 		4F947594286F8D340087645F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4F947593286F8D340087645F /* FirebaseAuth */; };
@@ -41,7 +40,6 @@
 		0C87805E286E9E71000039B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0C878060286EA9C8000039B8 /* ListaProductoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaProductoController.swift; sourceTree = "<group>"; };
 		0C878062286EAA70000039B8 /* ProductoFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoFormViewController.swift; sourceTree = "<group>"; };
-		0C878064286EAA9D000039B8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0C878066286EAB2E000039B8 /* Producto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Producto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +100,6 @@
 			children = (
 				0C878060286EA9C8000039B8 /* ListaProductoController.swift */,
 				0C878062286EAA70000039B8 /* ProductoFormViewController.swift */,
-				0C878064286EAA9D000039B8 /* LoginViewController.swift */,
 			);
 			path = vistas;
 			sourceTree = "<group>";
@@ -201,7 +198,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C878065286EAA9D000039B8 /* LoginViewController.swift in Sources */,
 				0C87803E286E98E9000039B8 /* ViewController.swift in Sources */,
 				0C878067286EAB2E000039B8 /* Producto.swift in Sources */,
 				0C878061286EA9C8000039B8 /* ListaProductoController.swift in Sources */,

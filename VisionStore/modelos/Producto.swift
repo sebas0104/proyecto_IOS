@@ -2,14 +2,12 @@ import Foundation
 class Producto{
 
 var IDproducto: Int
-var Nomproduc: String
 var Descripcion: String
 var Cantidad: Int
-var Precio: Double
+var Precio: String
 
-init(IDproducto: Int,Nomproduc: String,Descripcion: String,Cantidad: Int,Precio: Double){
+init(IDproducto: Int,Descripcion: String,Cantidad: Int,Precio: String){
     self.IDproducto = IDproducto
-    self.Nomproduc = Nomproduc
     self.Descripcion = Descripcion
     self.Cantidad = Cantidad
     self.Precio = Precio
@@ -17,7 +15,7 @@ init(IDproducto: Int,Nomproduc: String,Descripcion: String,Cantidad: Int,Precio:
 }
 
 func toString()-> String{
-    return "Producto: \(Nomproduc) - \(Descripcion) -\(Cantidad)- S/. \(Precio)"
+    return "Producto:  \(Descripcion) -\(Cantidad)- S/. \(Precio)"
 }
     
 }
